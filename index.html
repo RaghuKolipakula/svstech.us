@@ -6,7 +6,6 @@
   <title>SVS Tech — Intelligent Developer Tools & AI Utilities</title>
   <meta name="description" content="SVS Tech builds lightweight browser extensions and developer tools designed to streamline AI and financial data workflows.">
   
-  <!-- FAVICON -->
   <link rel="icon" href="icon128.png" type="image/png">
 
   <style>
@@ -108,11 +107,11 @@
     /* CARD IMAGE ENHANCEMENTS */
     .card-image-container {
       width: 100%;
-      height: 200px; /* Fixed height for consistency */
+      height: 200px;
       margin-bottom: 1.5rem;
       border-radius: 8px;
       overflow: hidden;
-      background: #000; /* Fallback */
+      background: #000;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -139,11 +138,19 @@
       font-size: 1.75rem;
       margin-bottom: 0.5rem;
     }
+    .card h2 a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .card h2 a:hover {
+      color: var(--accent);
+    }
     .card p {
       color: var(--text-muted);
       font-size: 1rem;
       margin-bottom: 1.5rem;
-      flex-grow: 1; /* Pushes version info down */
+      flex-grow: 1;
     }
     .features-list {
       list-style: none;
@@ -202,17 +209,33 @@
   </header>
 
   <main>
-    <!-- HERO SECTION WITH ENHANCED ICON -->
     <section class="hero">
       <img src="marquee_promo.jpg" alt="SVS Tech Logo" class="hero-icon">
       <h1>Intelligent Tools for<br>Modern Workflows</h1>
-      <p>Clean, private, and high-performance browser extensions designed to maximize productivity in AI and financial analysis.</p>
+      <p>Clean, private, and high-performance browser extensions designed to maximize productivity in AI, creator analytics, and financial workflows.</p>
     </section>
 
-    <!-- PLUGINS GRID WITH EMBEDDED PROMO IMAGES -->
     <section id="plugins" class="grid">
       
-      <!-- Plugin Card 1: OptionChain Clipper -->
+      <div class="card">
+        <div>
+          <div class="card-image-container">
+            <img src="small_promo.jpg" alt="CloutLens Creator Audit Interface Preview" class="card-image">
+          </div>
+          <span class="badge" style="background: rgba(16, 185, 129, 0.1); color: #34d399;">Published Extension</span>
+          <h2><a href="https://chromewebstore.google.com/detail/cloutlens-creator-audit/jjgmhhgcjieepjjjkjdiflhfihgbccpm" target="_blank" rel="noopener">CloutLens Creator Audit ↗</a></h2>
+          <p>Advanced creator analytics and audience auditing utility built for marketers, brands, and agencies to evaluate engagement metrics directly in-browser.</p>
+          <ul class="features-list">
+            <li>Instantly audit creator metrics and performance ratios</li>
+            <li>Deep audience engagement analysis with zero clutter</li>
+            <li>100% local processing with privacy-first architecture</li>
+          </ul>
+        </div>
+        <div class="version-info">
+          Status: Published &bull; Version: 1.0.0 &bull; Released: July 24, 2026
+        </div>
+      </div>
+
       <div class="card">
         <div>
           <div class="card-image-container">
@@ -232,7 +255,6 @@
         </div>
       </div>
 
-      <!-- Plugin Card 2: Page to Prompt -->
       <div class="card">
         <div>
           <div class="card-image-container">
@@ -254,28 +276,26 @@
       
     </section>
 
-    <!-- SUPPORT SECTION -->
     <section id="support" class="section-block">
       <h2>Extension Support</h2>
       <p style="color: var(--text-muted);">Need help with our extensions or have feature requests?</p>
       <div style="margin-top: 1.5rem; background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border);">
-        <p><strong>Developer Contact:</strong> Raghu B Kolipakula</p>
-        <p style="margin-top: 0.5rem;"><strong>Support Email:</strong> <a href="mailto:kolipakula@gmail.com" style="color: var(--accent); text-decoration: none;">kolipakula@gmail.com</a></p>
+        <p><strong>Developer Contact:</strong> SVS Tech Team</p>
+        <p style="margin-top: 0.5rem;"><strong>Support Email:</strong> <a href="mailto:team@svstech.us" style="color: var(--accent); text-decoration: none;">team@svstech.us</a></p>
         <p style="margin-top: 0.5rem;"><strong>Response Time:</strong> Within 24-48 business hours</p>
       </div>
     </section>
 
-    <!-- PRIVACY POLICY SECTION -->
     <section id="privacy" class="section-block">
       <h2>Privacy Policy</h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Last updated: July 23, 2026</p>
-            
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Last updated: July 24, 2026</p>
+        
       <div style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
         <p><strong>SVS Tech Extensions</strong> operate with a strict privacy-first policy:</p>
         <br>
         <ul style="margin-left: 1.5rem;">
-          <li style="margin-bottom: 0.5rem;"><strong>Local Browser Execution:</strong> All text extraction, financial table parsing, and formatting occur entirely inside your browser tab.</li>
-          <li style="margin-bottom: 0.5rem;"><strong>Zero Data Transmission:</strong> No clipped content, financial data, URLs, browsing history, or personal identifiers are ever sent to external servers.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Local Browser Execution:</strong> All text extraction, creator auditing, financial table parsing, and formatting occur entirely inside your browser tab.</li>
+          <li style="margin-bottom: 0.5rem;"><strong>Zero Data Transmission:</strong> No clipped content, financial metrics, creator stats, URLs, browsing history, or personal identifiers are ever sent to external servers.</li>
           <li style="margin-bottom: 0.5rem;"><strong>No Tracking & No Ads:</strong> We do not track user behavior, use analytics trackers, or sell data to third parties.</li>
           <li><strong>Local Storage Usage:</strong> Extensions use Chrome's local storage API solely to store your personal UI preferences locally on your device.</li>
         </ul>
