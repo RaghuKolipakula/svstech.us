@@ -1,355 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6HKH1F6QD"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-D6HKH1F6QD');
-  </script>
-
-  <!-- SEO Meta Tags -->
-  <title>SVS Tech — Intelligent Developer Tools, AI Utilities & Financial Browser Extensions</title>
-  <meta name="description" content="SVS Tech builds lightweight, high-performance browser extensions and developer utilities, including CloutLens Creator Audit, OptionChain Clipper, and Page to Prompt, designed to streamline AI workflows and financial data analysis.">
-  <meta name="keywords" content="SVS Tech, browser extensions, Chrome extensions, CloutLens Creator Audit, OptionChain Clipper, Page to Prompt, AI utilities, financial data extractor, developer tools">
-  <meta name="author" content="SVS Tech Team">
-  <link rel="canonical" href="https://svstech.us/">
-
-  <!-- Open Graph / Social Media SEO -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://svstech.us/">
-  <meta property="og:title" content="SVS Tech — Intelligent Developer Tools & AI Utilities">
-  <meta property="og:description" content="Clean, private, and high-performance browser extensions designed to maximize productivity in AI, creator analytics, and financial workflows.">
-  <meta property="og:image" content="https://svstech.us/marquee_promo.jpg">
-
-  <!-- Twitter Card SEO -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SVS Tech — Intelligent Developer Tools & AI Utilities">
-  <meta name="twitter:description" content="Clean, private, and high-performance browser extensions designed to maximize productivity in AI, creator analytics, and financial workflows.">
-  <meta name="twitter:image" content="https://svstech.us/marquee_promo.jpg">
-  
-  <link rel="icon" href="icon128.png" type="image/png">
-
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --card-hover-bg: #253348;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-hover: #0284c7;
-      --border: #334155;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 0;
-    }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .logo {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: -0.5px;
-    }
-    nav a {
-      color: var(--text-muted);
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-size: 0.95rem;
-      transition: color 0.2s;
-    }
-    nav a:hover { color: var(--text); }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-    }
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D6HKH1F6QD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D6HKH1F6QD');
+    </script>
+
+    <!-- Technical SEO Meta Tags -->
+    <title>Cloutlens - Instagram Creator Audit & Analytics Extension</title>
+    <meta name="description" content="Instantly audit Instagram creators, analyze engagement rates, and evaluate follower quality with the Cloutlens Chrome Extension. The ultimate creator analytics tool.">
+    <meta name="keywords" content="Instagram audit extension, creator analytics tool, Cloutlens Creator Audit, influencer engagement calculator, Instagram marketing tool, Chrome extension">
+    <meta name="author" content="SVS Tech">
+    <link rel="canonical" href="https://svstech.us/">
+
+    <!-- Open Graph / Social Media SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://svstech.us/">
+    <meta property="og:title" content="Cloutlens - Instagram Creator Audit & Analytics">
+    <meta property="og:description" content="Audit Instagram creators in seconds. Analyze engagement rates and audience metrics directly in your browser with Cloutlens.">
+    <meta property="og:image" content="https://svstech.us/insta_screen_store.png">
+
+    <!-- Twitter Card SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloutlens - Instagram Creator Audit & Analytics">
+    <meta name="twitter:description" content="Audit Instagram creators in seconds. Analyze engagement rates and audience metrics directly in your browser with Cloutlens.">
+    <meta name="twitter:image" content="https://svstech.us/insta_screen_store.png">
     
-    /* HERO ENHANCEMENTS */
-    .hero {
-      text-align: center;
-      padding: 3rem 1rem 4rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .hero-icon {
-      width: 96px;
-      height: 96px;
-      margin-bottom: 1.5rem;
-      border-radius: 20px;
-      filter: drop-shadow(0 4px 12px rgba(56, 189, 248, 0.3));
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      letter-spacing: -1.5px;
-      line-height: 1.1;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 650px;
-      margin: 0 auto;
-    }
+    <link rel="icon" href="icon128.png" type="image/png">
 
-    /* GRID & CARDS */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 2.5rem;
-      margin-top: 3rem;
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Cloutlens - Creator Audit",
+      "operatingSystem": "Chrome OS, Windows, macOS, Linux",
+      "applicationCategory": "BrowserApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Instantly audit creator metrics and performance ratios, deep audience engagement analysis, and 100% local processing.",
+      "url": "https://svstech.us/",
+      "image": "https://svstech.us/icon128.png",
+      "author": {
+        "@type": "Organization",
+        "name": "SVS Tech"
+      },
+      "downloadUrl": "https://chromewebstore.google.com/detail/cloutlens-creator-audit/jjgmhhgcjieepjjjkjdiflhfihgbccpm"
     }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
-      position: relative;
-    }
-    /* Entire card clickable wrapper styling when published */
-    .card.clickable-card {
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-    }
-    .card.clickable-card:hover {
-      border-color: var(--accent);
-      background-color: var(--card-hover-bg);
-      transform: translateY(-5px);
-    }
-    .card:not(.clickable-card):hover {
-      border-color: var(--border);
-      transform: none;
-    }
+    </script>
 
-    /* CARD IMAGE ENHANCEMENTS */
-    .card-image-container {
-      width: 100%;
-      height: 200px;
-      margin-bottom: 1.5rem;
-      border-radius: 8px;
-      overflow: hidden;
-      background: #000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--border);
-    }
-    .card-image {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-
-    .badge {
-      display: inline-block;
-      background: rgba(56, 189, 248, 0.1);
-      color: var(--accent);
-      font-size: 0.75rem;
-      font-weight: 600;
-      padding: 0.25rem 0.75rem;
-      border-radius: 9999px;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-    }
-    .card h3 {
-      font-size: 1.75rem;
-      margin-bottom: 0.5rem;
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      gap: 0.35rem;
-    }
-    .card.clickable-card h3:hover {
-      color: var(--accent);
-    }
-    .card p {
-      color: var(--text-muted);
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
-    .features-list {
-      list-style: none;
-      margin-bottom: 1.5rem;
-    }
-    .features-list li {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 0.75rem;
-      display: flex;
-      align-items: flex-start;
-    }
-    .features-list li::before {
-      content: "✓";
-      color: var(--accent);
-      margin-right: 0.75rem;
-      font-weight: bold;
-      line-height: 1.6;
-    }
-    .version-info {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border);
-      padding-top: 1.25rem;
-      margin-top: auto;
-    }
-
-    /* SECTIONS */
-    .section-block {
-      margin-top: 6rem;
-      padding-top: 4rem;
-      border-top: 1px solid var(--border);
-    }
-    .section-block h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    footer {
-      border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 3rem;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-top: 6rem;
-    }
-  </style>
+    <!-- Tailwind CSS (CDN for zero-build setup) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#0a0f1c',
+              surface: '#151e32',
+              surfaceHover: '#1e2b47',
+              primary: '#0ea5e9', // Sky 500
+              primaryHover: '#0284c7',
+              border: '#1e293b'
+            },
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0a0f1c;
+        color: #f8fafc;
+      }
+      .glass-panel {
+        background: rgba(21, 30, 50, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .hero-glow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(14,165,233,0.15) 0%, rgba(10,15,28,0) 70%);
+        z-index: -1;
+        pointer-events: none;
+      }
+      details > summary {
+        list-style: none;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+    </style>
 </head>
-<body>
-  <header>
-    <div class="logo">SVS TECH</div>
-    <nav>
-      <a href="#plugins">Plugins</a>
-      <a href="#support">Support</a>
-      <a href="#privacy">Privacy Policy</a>
-    </nav>
+<body class="antialiased min-h-screen flex flex-col relative overflow-x-hidden">
+
+  <!-- Background Effects -->
+  <div class="fixed inset-0 z-[-2] bg-background"></div>
+  <div class="fixed inset-0 z-[-1] bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')]"></div>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 glass-panel border-b border-border transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="icon128.png" alt="Cloutlens Logo" class="w-10 h-10 rounded-xl shadow-lg">
+        <a href="#" class="text-xl font-bold tracking-tight">Cloutlens <span class="text-primary">Creator Audit</span></a>
+      </div>
+      <nav class="hidden md:flex gap-8">
+        <a href="#features" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">Features</a>
+        <a href="#how-it-works" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">How it Works</a>
+        <a href="#faq" class="text-slate-400 hover:text-white transition-colors text-sm font-medium">FAQ</a>
+      </nav>
+      <div>
+        <a href="https://chromewebstore.google.com/detail/cloutlens-creator-audit/jjgmhhgcjieepjjjkjdiflhfihgbccpm" target="_blank" rel="noopener" class="bg-primary hover:bg-primaryHover text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-[0_0_15px_rgba(14,165,233,0.4)] hover:shadow-[0_0_25px_rgba(14,165,233,0.6)] transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+          Add to Chrome
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="icon128.png" alt="SVS Tech Logo" class="hero-icon">
-      <h1>Intelligent Tools for<br>Modern Workflows</h1>
-      <p>Clean, private, and high-performance browser extensions designed to maximize productivity in AI, creator analytics, and financial workflows.</p>
-    </section>
-
-    <section id="plugins" class="grid">
+  <!-- Main Content -->
+  <main class="flex-grow pt-32 pb-20">
+    
+    <!-- Hero Section -->
+    <section class="relative max-w-7xl mx-auto px-6 pt-16 lg:pt-24 pb-20 text-center flex flex-col items-center">
+      <div class="hero-glow"></div>
       
-      <!-- CloutLens - Creator Audit (Published) -->
-      <a href="https://chromewebstore.google.com/detail/cloutlens-creator-audit/jjgmhhgcjieepjjjkjdiflhfihgbccpm" target="_blank" rel="noopener" class="card clickable-card">
-        <div>
-          <div class="card-image-container">
-            <img src="insta_screen_store.png" alt="CloutLens Creator Audit Interface Preview" class="card-image">
-          </div>
-          <span class="badge" style="background: rgba(16, 185, 129, 0.1); color: #34d399;">Published - Public</span>
-          <h3>CloutLens - Creator Audit ↗</h3>
-          <p>Advanced creator analytics and audience auditing utility built for marketers, brands, and agencies to evaluate engagement metrics directly in-browser.</p>
-          <ul class="features-list">
-            <li>Instantly audit creator metrics and performance ratios</li>
-            <li>Deep audience engagement analysis with zero clutter</li>
-            <li>100% local processing with privacy-first architecture</li>
-          </ul>
-        </div>
-        <div class="version-info">
-          Status: Published &bull; Version: 1.0.0 &bull; Updated: Jul 23, 2026
-        </div>
-      </a>
-
-      <!-- OptionChain Clipper (Published) -->
-      <!-- Note: Update href with your actual Chrome Web Store link if available -->
-      <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener" class="card clickable-card">
-        <div>
-          <div class="card-image-container">
-            <img src="optionchain_small_promo.png" alt="OptionChain Clipper Interface Preview" class="card-image">
-          </div>
-          <span class="badge" style="background: rgba(16, 185, 129, 0.1); color: #34d399;">Published - Public</span>
-          <h3>OptionChain Clipper ↗</h3>
-          <p>Precision financial data extractor designed to seamlessly capture options chain data tables into structured formats for quantitative analysis and LLM processing.</p>
-          <ul class="features-list">
-            <li>Extracts real-time option chains cleanly from major brokers</li>
-            <li>Converts complex financial grids into clean CSV/JSON structures</li>
-            <li>Zero server tracking, 100% local processing</li>
-          </ul>
-        </div>
-        <div class="version-info">
-          Status: Published &bull; Version: 1.0.0 &bull; Updated: Jul 24, 2026
-        </div>
-      </a>
-
-      <!-- Page to Prompt - AI Context Clipper (Pending Review) -->
-      <div class="card">
-        <div>
-          <div class="card-image-container">
-            <img src="screenshot_1.jpg" alt="Page to Prompt Interface Preview" class="card-image">
-          </div>
-          <span class="badge" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">Pending Review</span>
-          <h3>Page to Prompt</h3>
-          <p>AI Context Clipper — One-click webpage text extractor formatted as clean Markdown, ready to paste into ChatGPT, Claude, and Gemini.</p>
-          <ul class="features-list">
-            <li>Instantly converts articles and docs into structured Markdown</li>
-            <li>Intelligently strips away ads, sidebars, and navigation clutter</li>
-            <li>100% local processing with zero data collection or tracking</li>
-          </ul>
-        </div>
-        <div class="version-info">
-          Status: Pending Review &bull; Version: 1.0.1 &bull; Updated: Jul 25, 2026
-        </div>
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-primary text-sm font-semibold mb-8 animate-fade-in-up" style="animation-delay: 0.1s;">
+        <span class="relative flex h-2.5 w-2.5">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+        </span>
+        Live on the Chrome Web Store
       </div>
-      
-    </section>
 
-    <section id="support" class="section-block">
-      <h2>Extension Support</h2>
-      <p style="color: var(--text-muted);">Need help with our extensions or have feature requests?</p>
-      <div style="margin-top: 1.5rem; background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border);">
-        <p><strong>Developer Contact:</strong> SVS Tech Team</p>
-        <p style="margin-top: 0.5rem;"><strong>Support Email:</strong> <a href="mailto:team@svstech.us" style="color: var(--accent); text-decoration: none;">team@svstech.us</a></p>
-        <p style="margin-top: 0.5rem;"><strong>Response Time:</strong> Within 24-48 business hours</p>
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight max-w-4xl animate-fade-in-up" style="animation-delay: 0.2s;">
+        Audit Instagram Creators in <span class="gradient-text">Seconds</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl animate-fade-in-up" style="animation-delay: 0.3s;">
+        The ultimate Chrome extension for marketers, brands, and agencies. Calculate engagement rates and evaluate audience quality instantly—right in your browser.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in-up" style="animation-delay: 0.4s;">
+        <a href="https://chromewebstore.google.com/detail/cloutlens-creator-audit/jjgmhhgcjieepjjjkjdiflhfihgbccpm" target="_blank" rel="noopener" class="bg-primary hover:bg-primaryHover text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-[0_0_20px_rgba(14,165,233,0.5)] hover:shadow-[0_0_30px_rgba(14,165,233,0.7)] transform hover:-translate-y-1 flex items-center justify-center gap-3">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+          </svg>
+          Add to Chrome — It's Free
+        </a>
+      </div>
+
+      <!-- Product Preview Showcase -->
+      <div class="w-full max-w-5xl mx-auto relative group animate-fade-in-up" style="animation-delay: 0.5s;">
+        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-indigo-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+        <div class="relative rounded-xl border border-border bg-surface overflow-hidden shadow-2xl flex items-center justify-center p-2">
+          <img src="insta_screen_store.png" alt="Cloutlens Dashboard inside Chrome Browser" class="w-full rounded-lg object-cover">
+        </div>
       </div>
     </section>
 
-    <section id="privacy" class="section-block">
-      <h2>Privacy Policy</h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 2rem;">Last updated: July 25, 2026</p>
+    <!-- Features Section -->
+    <section id="features" class="max-w-7xl mx-auto px-6 py-24">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">Everything you need for smarter vetting</h2>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto">Stop guessing. Get the data you need to make confident influencer marketing decisions without leaving Instagram.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="glass-panel p-8 rounded-2xl border border-border hover:border-primary transition-colors group">
+          <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Engagement Rate Calculator</h3>
+          <p class="text-slate-400">Instantly calculate true engagement ratios based on recent posts. We do the math so you don't have to.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-panel p-8 rounded-2xl border border-border hover:border-primary transition-colors group">
+          <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Follower Quality Insights</h3>
+          <p class="text-slate-400">Analyze audience authenticity. Spot fake followers and bot engagement before spending your marketing budget.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-panel p-8 rounded-2xl border border-border hover:border-primary transition-colors group">
+          <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Instant Browser Execution</h3>
+          <p class="text-slate-400">Zero loading screens. Cloutlens operates 100% locally in your browser for immediate, private analytics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-24 relative">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">How It Works</h2>
+          <p class="text-slate-400 text-lg max-w-2xl mx-auto">Get deep creator analytics in three simple steps.</p>
+        </div>
         
-      <div style="color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
-        <p><strong>SVS Tech Extensions</strong> operate with a strict privacy-first policy:</p>
-        <br>
-        <ul style="margin-left: 1.5rem;">
-          <li style="margin-bottom: 0.5rem;"><strong>Local Browser Execution:</strong> All text extraction, creator auditing, financial table parsing, and formatting occur entirely inside your browser tab.</li>
-          <li style="margin-bottom: 0.5rem;"><strong>Zero Data Transmission:</strong> No clipped content, financial metrics, creator stats, URLs, browsing history, or personal identifiers are ever sent to external servers.</li>
-          <li style="margin-bottom: 0.5rem;"><strong>No Tracking & No Ads:</strong> We do not track user behavior, use analytics trackers, or sell data to third parties.</li>
-          <li><strong>Local Storage Usage:</strong> Extensions use Chrome's local storage API solely to store your personal UI preferences locally on your device.</li>
-        </ul>
+        <div class="grid md:grid-cols-3 gap-12 relative">
+          <!-- Connecting Line for Desktop -->
+          <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+          
+          <!-- Step 1 -->
+          <div class="relative text-center z-10">
+            <div class="w-24 h-24 bg-surface border-2 border-primary rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black text-primary shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+              1
+            </div>
+            <h3 class="text-xl font-bold mb-3">Install Extension</h3>
+            <p class="text-slate-400">Add Cloutlens to Google Chrome with one click. It's completely free and requires no sign-up.</p>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="relative text-center z-10">
+            <div class="w-24 h-24 bg-surface border-2 border-primary rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black text-primary shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+              2
+            </div>
+            <h3 class="text-xl font-bold mb-3">Open Instagram</h3>
+            <p class="text-slate-400">Navigate to any creator's Instagram profile you want to evaluate.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="relative text-center z-10">
+            <div class="w-24 h-24 bg-surface border-2 border-primary rounded-full flex items-center justify-center mx-auto mb-6 text-3xl font-black text-primary shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+              3
+            </div>
+            <h3 class="text-xl font-bold mb-3">View Metrics</h3>
+            <p class="text-slate-400">Click the Cloutlens icon to instantly reveal engagement rates, average likes, and analytics.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- SEO Content / FAQ Accordion -->
+    <section id="faq" class="max-w-4xl mx-auto px-6 py-24">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+        <p class="text-slate-400">Everything you need to know about the product and how it works.</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <details class="group glass-panel rounded-xl border border-border [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg hover:text-primary transition-colors">
+            How do you check an influencer's engagement rate?
+            <span class="ml-1.5 flex-shrink-0 bg-surfaceHover p-2 rounded-full group-open:-rotate-180 transition duration-300">
+              <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-400 leading-relaxed">
+            Traditionally, calculating an influencer's engagement rate requires manually summing up likes and comments from recent posts, dividing by their total follower count, and multiplying by 100. Cloutlens automates this entire process. Simply navigate to an Instagram profile, and the extension instantly extracts the data and calculates the true engagement rate for you.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group glass-panel rounded-xl border border-border [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg hover:text-primary transition-colors">
+            Is Cloutlens safe and private to use?
+            <span class="ml-1.5 flex-shrink-0 bg-surfaceHover p-2 rounded-full group-open:-rotate-180 transition duration-300">
+              <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7-7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-400 leading-relaxed">
+            Yes. Cloutlens is built with a strict privacy-first architecture. All calculations and data extractions occur 100% locally within your browser tab. We do not track your browsing history, we do not store creator data on external servers, and we do not sell data to third parties.
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group glass-panel rounded-xl border border-border [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg hover:text-primary transition-colors">
+            What is a good engagement rate on Instagram?
+            <span class="ml-1.5 flex-shrink-0 bg-surfaceHover p-2 rounded-full group-open:-rotate-180 transition duration-300">
+              <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-400 leading-relaxed">
+            A "good" engagement rate varies by audience size. For nano-influencers (1K-10K followers), 4-5% is excellent. For micro-influencers (10K-100K), 2-3% is standard. For mega-influencers (1M+), anything above 1.5% is considered very strong. Cloutlens helps you instantly benchmark these metrics to ensure you partner with high-performing creators.
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group glass-panel rounded-xl border border-border [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between p-6 cursor-pointer font-semibold text-lg hover:text-primary transition-colors">
+            Does it work on other platforms besides Instagram?
+            <span class="ml-1.5 flex-shrink-0 bg-surfaceHover p-2 rounded-full group-open:-rotate-180 transition duration-300">
+              <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-400 leading-relaxed">
+            Currently, Cloutlens is heavily optimized for Instagram creator audits. Our proprietary algorithms are specifically tuned to read and analyze Instagram's web structure for the highest accuracy. Support for TikTok and YouTube is on our roadmap.
+          </div>
+        </details>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2026 SVS Tech. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="border-t border-border bg-background pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-12">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-4">
+          <img src="icon128.png" alt="SVS Tech Logo" class="w-8 h-8 rounded-lg grayscale">
+          <span class="text-xl font-bold tracking-tight">SVS Tech</span>
+        </div>
+        <p class="text-slate-500 max-w-sm mb-6">
+          Building intelligent, privacy-first developer tools and browser extensions to maximize productivity in modern workflows.
+        </p>
+        <a href="mailto:team@svstech.us" class="text-primary hover:text-primaryHover font-medium transition-colors">Contact Support &rarr;</a>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-4">Our Extensions</h4>
+        <ul class="space-y-3 text-slate-500">
+          <li><a href="#" class="hover:text-primary transition-colors">Cloutlens - Creator Audit</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">OptionChain Clipper</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Page to Prompt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white mb-4">Legal</h4>
+        <ul class="space-y-3 text-slate-500">
+          <li><a href="#privacy" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+          <li><a href="#terms" class="hover:text-primary transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-slate-500 text-sm">
+        &copy; 2026 SVS Tech. All rights reserved. Not affiliated with Instagram.
+      </p>
+      <div class="text-slate-500 text-sm flex gap-4">
+        <span>Made for Marketers</span>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"6f97e809d2eb402b8fbf51dbde824242","r":1}' crossorigin="anonymous"></script>
